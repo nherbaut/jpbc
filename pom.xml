@@ -47,13 +47,13 @@
         <module>jpbc-test</module>
         <module>jpbc-benchmark</module>
         <module>jpbc-site-skin</module>
-        <module>jpbc-android</module>
+	<!-- <module>jpbc-android</module> -->
     </modules>
 
     <repositories>
         <repository>
             <id>central</id>
-            <url>http://repo.maven.apache.org/maven2/</url>
+            <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
         <repository>
             <id>java.net</id>
@@ -75,7 +75,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.8.2</version>
+            <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -163,10 +163,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3</version>
-                <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
+                <version>3.8.1</version>
+		<configuration>
+			<source>1.8</source>
+			<target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
